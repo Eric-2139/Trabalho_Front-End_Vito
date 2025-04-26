@@ -56,12 +56,25 @@ function exibirFilmes(lista) {
 function exibirCartaz(filme) {
     const modalTitulo = document.getElementById('modalTitulo');
     const modalCartaz = document.getElementById('modalCartaz');
+    const modalSinopse = document.getElementById('modalSinopse');
+    const modalDuracao = document.getElementById('modalDuracao');
+    const modalGenero = document.getElementById('modalGenero');
 
     modalTitulo.textContent = filme.title;
     modalCartaz.src = `https://image.tmdb.org/t/p/w500${filme.poster_path}`;
+
+    modalSinopse.textContent = filme.overview || 'Sinopse não disponível.';
+    modalDuracao.textContent = filme.runtime ? `${filme.runtime} min` : 'Duração não informada.';
+    
+    if (filme.genres && filme.genres.length > 0) {
+        modalGenero.textContent = filme.genres.map(g => g.name).join(', ');
+    } else {
+        modalGenero.textContent = 'Gênero não informado.';
+    }
 
     // Abrir o modal via JS
     const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
     modal.show();
 }
+
 
