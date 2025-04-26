@@ -51,46 +51,43 @@
             <button type="button" class="btn btn-info" onclick="mostrarTodosFilmes()">Todos</button>
         </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Título</th>
-                <th scope="col">Data</th>
-                <th scope="col">Horário</th>
-            </tr>
-        </thead>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <!-- As informações serão exibidas aqui dinamicamente pelo JS -->
-        </tbody>
-    </table>
-
-  
-
-
-
+            <tbody>
+                <!-- As informações serão exibidas aqui dinamicamente pelo JS -->
+            </tbody>
+        </table>
     </div>
 
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
 
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modalTitulo">Título do Filme</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalTitulo">Título do Filme</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
 
-      <div class="modal-body text-center">
-        <img id="modalCartaz" src="" alt="Cartaz do Filme" class="img-fluid mb-3">
-        
-        <div class="text-start">
-          <h5>Sinopse:</h5>
-          <p id="modalSinopse">Sinopse do filme aqui...</p>
+                <div class="modal-body text-center">
+                    <img id="modalCartaz" src="" alt="Cartaz do Filme" class="img-fluid mb-3">
+
+                    <div class="text-start">
+                        <h5>Sinopse:</h5>
+                        <p id="modalSinopse">Sinopse do filme aqui...</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
     </div>
-  </div>
-</div>
+</body>
+
+</html>
