@@ -1,4 +1,4 @@
-let listaCompletaFilmes = [];
+let todosFilmes = [];
 
 async function carregarTabelaFilmes() {
     const apiKey = '69c6c8da68b6b0f6b07703274553144b';

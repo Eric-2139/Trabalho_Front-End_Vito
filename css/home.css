@@ -9,3 +9,99 @@
 .black-color {
     background-color: black !important;
 }
+
+/* Estilos para o modal melhorado */
+.info-adicional {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #0d6efd;
+}
+
+.info-adicional p {
+    margin-bottom: 5px;
+}
+
+.generos-filme {
+    font-style: italic;
+}
+
+/* Estilos para os filtros */
+#filtro-genero {
+    max-width: 300px;
+}
+
+/* Garantir que não haja múltiplos elementos de informação */
+.info-adicional {
+    display: none;
+}
+
+.modal.show .info-adicional {
+    display: block;
+}
+
+/* Estilos para a seção de filmes em destaque */
+#filmes-destaque .card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#filmes-destaque .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#filmes-destaque .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+#filmes-destaque .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilos para o modal */
+#filmeModal .modal-body img {
+    max-height: 500px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#filmeModal .modal-body p {
+    margin-bottom: 0.5rem;
+}
+
+.carousel-img {
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 30%;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* Transição suave entre slides */
+.carousel-item {
+    transition: transform 1.5s ease-in-out;
+}

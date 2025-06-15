@@ -51,6 +51,16 @@
             <button type="button" class="btn btn-info" onclick="mostrarTodosFilmes()">Todos</button>
         </div>
 
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="filtro-genero" class="form-label">Filtrar por Gênero:</label>
+                <select id="filtro-genero" class="form-select">
+                    <option value="todos">Todos os Gêneros</option>
+                    <!-- Os gêneros serão carregados via JavaScript -->
+                </select>
+            </div>
+        </div>
+
         <table class="table">
             <thead>
                 <tr>
